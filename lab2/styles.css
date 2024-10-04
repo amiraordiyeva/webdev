@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8b000c;
+}
+
+@keyframes colorChange {
+    0% { color: #8b000c; }
+    25% { color: #73000a }
+    50% { color: #600008; }
+    75% { color: #5a0007; }
+    100% { color: #3c0106; }
+}
+
+.animated-text {
+    animation: colorChange 5s infinite;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #8b000c;
+    background-color: #ffb2b9;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #d48289;
+}
+
+header {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-image: url('IMG_1572.jpg');
+    background-size: cover; /*фулл контейнер*/
+    background-position: center;
+    
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffb2b9;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: #8b000c;
+}
+
+h2:hover {
+    color: #d48289;
+}
+
+h2::before {
+    content: "*"; 
+    color: #84000b; 
+}
+
+ul {
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #8b000c;
+    color: #ffb2b9;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header {
+        height: 40vh; 
+    }
+
+    .button {
+        padding: 8px 16px; 
+    }
+
+    section {
+        margin: 10px; 
+        padding: 10px; 
+    }
+}
