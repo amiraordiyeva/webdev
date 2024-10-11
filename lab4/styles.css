@@ -1,0 +1,95 @@
+/* Обнуляем отступы и устанавливаем box-sizing по всему документу */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Оформление для body: фон, центрирование содержимого, шрифт */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/background.gif');
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Контейнер для заголовка, кубиков и кнопки */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Стиль для заголовка */
+h1 {
+    font-size: 2.5rem;
+    color: #333333; 
+    margin-bottom: 20px;
+}
+
+/* Центрирование кубиков */
+.dice-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Оформление изображений кубиков */
+.dice-container img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+/* Оформление кнопки */
+button {
+    background-color: #4CAF50; /* Зеленая кнопка */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение фона */
+}
+
+/* Эффект при наведении на кнопку , изменяет цвет*/
+button:hover {
+    background-color: #dc0202; 
+}
+
+/* Уменьшение размера кубиков и кнопки на маленьких экранах */
+@media (max-width: 600px) {
+    .dice-container img {
+        width: 70px;
+        height: 70px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Оформление отображения суммы и количества кликов */
+#sumDisplay, #rollCount {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Оформление для сообщения о выигрыше */
+#Message {
+    font-size: 2.1rem; 
+    margin-top: 20px;
+    color: #c20000;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Dice Game</title> <!-- Название страницы -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container"> 
+        <header>
+            <h1>Dice Game</h1> <!-- Заголовок игры -->
+        </header>
+        <main>
+            <section class="dice-container"> <!-- Контейнер для кубиков -->
+                <img id="dice1" src="images/dice1.png" alt="Dice 1"> <!-- Картинка 1-го кубика -->
+                <img id="dice2" src="images/dice2.png" alt="Dice 2"> <!-- Картинка 2-го кубика -->
+            </section>
+            <button id="rollButton">Roll Dice</button> <!-- Кнопка для броска кубиков -->
+            <section>
+                <p id="sumDisplay">Sum: 0</p> <!-- Сумма кубиков -->
+                <p id="rollCount">Clicks: 0</p> <!-- Счетчик кликов по кнопке -->
+                <h1 id="Message"></h1> <!-- Сообщение о выигрыше -->
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
+
